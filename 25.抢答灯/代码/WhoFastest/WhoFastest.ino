@@ -118,8 +118,8 @@ void espnowinit() {
   esp_now_set_self_role(ESP_NOW_ROLE_COMBO);
 
   //打印自己的版子ip
-  //Serial.print("ESP8266 Board MAC Address: ");
-  //Serial.println(WiFi.macAddress());
+  Serial.print("ESP8266 Board MAC Address: ");
+  Serial.println(WiFi.macAddress());
 
   //计算板子有几个
   sizelen = sizeof(broadcastAddress) / sizeof(broadcastAddress[0]);
